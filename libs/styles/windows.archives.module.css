@@ -1,0 +1,29 @@
+.window {
+  background-color: rgb(255, 238, 215);
+  color: rgb(58, 51, 44);
+  padding-top: 0px;
+}
+
+.title {
+  width: 100%;
+  padding-bottom: 0px !important;
+  background-color: rgb(63, 29, 1);
+  color: wheat;
+  font-family: var(--font-toshibatxl1);
+  border: 1px solid rgba(105, 105, 105, 0.274);
+  /* Increased the border width for better visibility */
+  border-radius: 1px;
+  /* Increased the border-radius for a more noticeable rounded corner */
+}
+
+.button {
+  display: block;
+  position: relative;
+  padding: 2px 8px;
+  border: 1px solid #b3b38d;
+  border-radius: 2px;
+  background-color: bisque;
+  margin-left: 2px;
+  color: black;
+  font-family: var(--font-toshibatxl1);
+}

@@ -1,0 +1,98 @@
+.results {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.results .result {
+    margin-top: 4px;
+}
+
+.results * a:hover {
+    text-decoration: underline;
+}
+
+.results ul {
+    list-style: none;
+}
+
+.results ul ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.results ul ul ul{
+    list-style: disc;
+}
+
+.results ul li {
+    padding-bottom: 20px;
+}
+
+.results ul li li {
+    padding-bottom: 0px;
+}
+
+.result {
+    padding: 4px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items in the center vertically */
+    background-color: darkslategray;
+    border-radius: 5px;
+    height: auto;
+    padding: 4px;
+}
+
+.search .spacer {
+    width: 10px; /* Adjustable spacer width */
+}
+
+.search label {
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+}
+
+.search input[type="text"],
+.search input[type="number"] {
+    flex-grow: 1; /* Allows the inputs to take the remaining space */
+    font-size: 16px;
+    background-color: rgb(30, 49, 49);
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    padding-left: 4px;
+}
+
+.search select {
+    max-width: 240px; /* Allows the select to take the remaining space */
+    font-size: 16px;
+    background-color: rgb(30, 49, 49);
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    padding-left: 4px;
+    color: white; /* Adjust text color to match other inputs */
+}
+
+
+.search input[type="number"] {
+    width: 60px; /* Fixed width for number inputs */
+}
+
+
+.search button {
+    font-size: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+    color:black;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: deepskyblue;
+}

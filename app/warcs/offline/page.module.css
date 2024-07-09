@@ -1,0 +1,26 @@
+.window {
+    /* Center content horizontally */
+    width: 85%;
+    margin: 5vh auto;
+}
+
+.window .flexthis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title a:hover{
+    text-decoration: underline;
+}
+
+.upload form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4px 8px;
+}
+
+.upload form label {
+    margin: auto 0;
+}

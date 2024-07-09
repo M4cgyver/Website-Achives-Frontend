@@ -1,0 +1,76 @@
+.recordListing {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 4px;
+}
+
+.recordListing .singleLineHide {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recordListing .singleLine {
+    white-space: nowrap;
+}
+
+.recordListing > * { 
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.recordListing > :first-child {
+    flex-grow: 1;
+}
+
+.recordListing > :not(:first-child) {
+    text-align: center;
+}
+
+.recordListing h1 {
+    text-align: center;
+}
+
+.recordListing a:hover {
+    text-decoration: underline;
+}
+
+.recordListingController {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 2px;
+    gap: 12px;
+    padding-left: 4px;
+    padding-right: 10px;
+}
+
+.recordListingController label {
+    font-size: 18px;
+}
+
+.recordListingController button {
+    font-size: 16px;
+    height: 28px;
+}
+
+.recordListingController form {
+    display:flex;
+    flex-direction: row;
+    align-items:end;
+    flex-grow: 1;
+    padding: 4px;
+    gap: 4px;
+}
+
+.recordListingController form input[type="text"] {
+    flex-grow: 1;
+    height: 24px;
+    margin-bottom: 2px;
+}

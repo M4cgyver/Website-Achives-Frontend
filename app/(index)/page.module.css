@@ -1,0 +1,65 @@
+.intro {
+    width: 85%;
+    padding: 0 2.5%;
+    margin: 0 auto;
+    color: rgb(66, 26, 26);
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, rgb(255, 228, 192) 5%, rgb(255, 228, 192) 95%, rgba(255, 0, 0, 0) 100%);
+}
+
+.intro h1 {
+    text-decoration: underline;
+    font-size: max(6.25vw, 5vh);
+    font-family: var(--font-eaglespcga_alt2x2y);
+}
+
+.intro h2 {
+    margin-top: max(-2vw, -1vh);
+    font-family: var(--font-toshibatxl2);
+    font-size: max(2.25vw, 1.5vh);
+    line-height: max(2vw, 1vh);
+}
+
+.warcUris a {
+    text-decoration: underline;
+}
+
+.warcUris a:hover {
+    text-decoration: none;
+}
+
+.spacer {
+    margin: 0 auto;
+    width: 50%;
+    height: 1px;
+    background-color: brown;
+    margin-top: max(1.75vw, 2vh);
+    margin-bottom: max(1.75vw, 2vh);
+}
+
+.warcInfo {
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25vw;
+    row-gap: 1.5vh;
+    justify-content: space-around;
+}
+
+.warcInfo > * {
+    width: 45%;
+}
+
+.warcInfo > .offline {
+    width: 85%;
+    max-width: 948.391px;
+}
+
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .noise {
+        filter: contrast(125%) brightness(650%) invert(100%);
+        mix-blend-mode: color-dodge;
+    }
+}

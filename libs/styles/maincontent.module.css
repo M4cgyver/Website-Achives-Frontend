@@ -1,0 +1,110 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    'title title title title title title'
+    'slideshow slideshow slideshow slideshow slideshow slideshow'
+    'navigation-rhs content content content content content'
+    'views-statistics content content content content content'
+    'friends-and-interests  content content content content content'
+    'content-spacer  content content content content content' /* If the content is bigger than the rest of the rhs, use this to space the empty space */
+    'footer footer footer footer footer footer';
+    grid-template-columns: auto 1fr; /* First column shrinks to fit content, second column takes remaining space */
+    gap: 20px;
+    width: min(95vh, 90vw);
+    margin: 20px auto;
+
+}
+
+.title {
+    grid-area: title; 
+}
+
+
+.title h1 {
+    font-family: var(--font-mario), sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    margin-top: 0.875em;
+    margin-left: 0.225vw;
+    margin-bottom: 0;
+    text-shadow: -1px 1px 1px #0072c6, 1px -1px 1px #0072c6;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+}
+
+.title h2 {
+    font-family: var(--font-toshibatxl1), sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    margin-top: -10px;
+    margin-left: 0.175em;
+    margin-bottom: 0;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+.slideshow {
+    grid-area: slideshow; 
+}
+
+.viewStatistics {
+    grid-area: views-statistics; 
+}
+
+.navigationRhs {
+    grid-area: navigation-rhs; 
+    font-family: var(--font-toshibatxl1), monospace;
+    max-width: 200px;
+}
+
+.navigationRhs ul {
+    margin: 0;
+    margin-top: 0px;
+    padding-left: 12px;
+    padding-right: 8px;
+    list-style-type: "→";
+} 
+
+.navigationRhs ul ul li {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
+
+.friendsContainer {
+    grid-area: friends-and-interests; 
+    
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Evenly space out the elements */
+}
+
+.friendsContainer a,
+.friendsContainer img {
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+}
+
+.friendsContainer img {
+    aspect-ratio: 88/35;
+}
+
+.content {
+    grid-area: content; 
+}
+
+.footer {
+    grid-area: footer; 
+
+    font-family: var(--font-toshibatxl1), monospace;
+    font-size: 14px;
+}
+
+.footer .disclaimer {
+    margin: 0 auto;
+}
